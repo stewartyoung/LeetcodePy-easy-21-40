@@ -15,3 +15,4 @@ But the following [1,2,2,null,3,null,3] is not:
 ![image](https://user-images.githubusercontent.com/36263575/65746789-a453a580-e0f7-11e9-8d3a-be75ba2c2edc.png) 
 
 ## BinaryTree 
+Learning binary tree setup in python here: https://www.youtube.com/watch?v=YlgPi75hIBc
