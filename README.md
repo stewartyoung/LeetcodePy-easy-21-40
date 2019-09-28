@@ -1,4 +1,4 @@
-## SameTree
+## SameTree (To come back to binary tree code after a few lectures)
 Given two binary trees, write a function to check if they are the same or not.
 
 Two binary trees are considered the same if they are structurally identical and the nodes have the same value. 
@@ -16,3 +16,17 @@ But the following [1,2,2,null,3,null,3] is not:
 
 ## BinaryTree 
 Learning binary tree setup in python here: https://www.youtube.com/watch?v=YlgPi75hIBc
+
+## MaxDepthTree
+Given a binary tree, find its maximum depth.
+
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Given binary tree [3,9,20,null,null,15,7],
+
+![image](https://user-images.githubusercontent.com/36263575/65813008-fe6f6c00-e1c6-11e9-877d-90c2e02abc7f.png) 
+return its depth = 3.
