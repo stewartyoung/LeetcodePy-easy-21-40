@@ -28,4 +28,5 @@ Example:
 
 Given binary tree [3,9,20,null,null,15,7],
 
-![image](https://user-images.githubusercontent.com/36263575/65813008-fe6f6c00-e1c6-11e9-877d-90c2e02abc7f.png)
+![image](https://user-images.githubusercontent.com/36263575/65813008-fe6f6c00-e1c6-11e9-877d-90c2e02abc7f.png) 
+return its depth = 3.
