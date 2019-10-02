@@ -1,3 +1,5 @@
+import sys
+
 class MinStack:
 
     def __init__(self):
@@ -7,33 +9,25 @@ class MinStack:
         self.q = []        
 
     def push(self, x: int) -> None:
-        curMin = self.getMin()
-        if curMin == None or x < curMin:
-            curMin = x
-
-        # append the tuple 
-        self.q.append((x,curMin))
+        self.q.append((x,min(self.getMin(), x)))
 
     def pop(self) -> None:
         self.q.pop()
 
     def top(self) -> int:
-        if len(self.q) == 0:
-            return None
-        else:
-            return self.q[len(self.q)-1][0]
+        if self.q:
+            return self.q[-1][0]
 
     def getMin(self) -> int:
-        if len(self.q) == 0:
-            return None
-        else: 
-            return self.q[len(self.q)-1][1]
-
+        if self.q:
+          return self.q[-1][1]
+        return sys.maxsize
+    
 # Your MinStack object will be instantiated and called as such:
 obj = MinStack()
-x = 6
-y = 4
-z = 9
+x = -2
+y = 0
+z = -3
 obj.push(x)
 obj.push(y)
 obj.push(z)
