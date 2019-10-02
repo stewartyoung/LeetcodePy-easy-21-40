@@ -21,10 +21,22 @@ class MinStack:
         if len(self.q) == 0:
             return None
         else:
-            self.q[len(self.q)-1][0]
+            return self.q[len(self.q)-1][0]
 
     def getMin(self) -> int:
         if len(self.q) == 0:
             return None
         else: 
             return self.q[len(self.q)-1][1]
+
+# Your MinStack object will be instantiated and called as such:
+obj = MinStack()
+x = 6
+y = 4
+z = 9
+obj.push(x)
+obj.push(y)
+obj.push(z)
+obj.pop()
+param_3 = obj.top()
+param_4 = obj.getMin()
