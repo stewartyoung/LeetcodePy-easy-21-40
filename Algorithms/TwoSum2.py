@@ -3,12 +3,12 @@ egTarget = 9
 
 class Solution:
     def twoSum(self, numbers, target):
-        for num in numbers:
+        for num in range(len(numbers)):
             index1 = num
-            for i in range(index1 + 1,len(numbers)):
+            for i in range(index1 + 1,len(numbers)-1):
                 if numbers[index1] + numbers[i] == target:
                     index2 = i
-                    return list(index1, index2)
+                    return [index1 + 1, index2 + 1]
 
 test = Solution()
 print(test.twoSum(egNumbers,egTarget))
