@@ -125,3 +125,33 @@ Example:
 Input: numbers = [2,7,11,15], target = 9 
 Output: [1,2] 
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2. 
+
+## Excel Column
+
+Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+
+For example: 
+
+    1 -> A
+    2 -> B
+    3 -> C
+    ...
+    26 -> Z
+    27 -> AA
+    28 -> AB 
+    ...
+    
+Example 1: 
+
+Input: 1
+Output: "A" 
+
+Example 2: 
+
+Input: 28
+Output: "AB"
+
+Example 3: 
+
+Input: 701
+Output: "ZY"
