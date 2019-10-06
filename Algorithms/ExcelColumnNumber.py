@@ -4,7 +4,10 @@ testString3 = "BD"
 
 class Solution:
     def ExcelColumnNumber(self, string):
-        return ord(string)//26 - 1
+        nums = []
+        for char in string:
+            nums.append(ord(char)//26 - 1)
+        return ''.join(str(x) for x in nums)
 
 test = Solution()
 print(test.ExcelColumnNumber(testString1))
