@@ -6,7 +6,7 @@ class Solution:
     def ExcelColumnNumber(self, string):
         result = 0
         for char in string:
-            result = result * 26 + ord(char) - 1
+            result = result * 26 + ord(char) - 64
         return result
 
 test = Solution()
